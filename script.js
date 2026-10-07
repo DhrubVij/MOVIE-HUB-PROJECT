@@ -12,7 +12,7 @@ form.addEventListener("submit",(e)=>{
 
 async function searchMovies(moviename){
     moviehub.innerHTML=`<P>Searching Movie......</P>`;
-    let response=await fetch(`http://www.omdbapi.com/?apikey=3eed3bad&s=${moviename}`);
+    let response=await fetch(`https://www.omdbapi.com/?apikey=3eed3bad&s=${moviename}`);
     let data= await response.json();
     console.log(data);
 
